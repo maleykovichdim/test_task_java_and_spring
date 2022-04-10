@@ -1,6 +1,3 @@
-# test_task_java_and_spring
-Test task.  Java + Spring
-
 
 Tasks:
 1. Correct all of the deficiencies in index.html

@@ -1,0 +1,59 @@
+#spring.datasource.url: jdbc:${JAWSDB_URL:mysql://localhost:3306/blog?createDatabaseIfNotExist=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=false}
+#spring.datasource.username: root
+#spring.datasource.password: root
+#spring.jpa.hibernate.ddl-auto: none
+#spring.jpa.show-sql: true
+server.port: ${PORT:8080}
+
+spring:
+#  banner:
+#    location: banner.txt
+  main:
+#    banner-mode: console
+    log-startup-info: true
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/postgres?currentSchema=testdb
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+  liquibase:
+    enabled: true
+    change-log: classpath:changelog-master.xml
+    default-schema: testdb
+    drop-first: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+
+##Liquibase
+#spring.liquibase.change-log: classpath:db/changelog/db.changelog-master.xml
+#spring.liquibase.enabled: true
+
+
+##common init data
+#blog.title: DevPub
+#blog.subtitle: Рассказы разработчиков
+#blog.phone: +7 903 666-44-55
+#blog.email: mail@mail.ru
+#blog.copyright: Дмитрий Сергеев
+#blog.copyrightFrom: 2005
+
+#blog_engine:
+#  additional:
+#    announceMaxLength: 150
+#    uploadedMaxFileWeight: 5242880
+#    commentMinLength: 3
+#    passwordMinLength: 6
+#    profilePhotoWidth: 36
+#    profilePhotoHeight: 36
+#    postTitleMinLength: 3
+#    postTextMinLength: 50
+#    websiteHost: diplom-blog-skillbox-j.herokuapp.com
+#  cloudinary:
+#    cloudName: dov4fhu49
+#    apiKey: ${CLOUDINARY_API_KEY}
+#    apiSecret: ${CLOUDINARY_API_SECRET}
+
+
+

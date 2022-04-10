@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
+    <changeSet id="insert_sectors" author="maleykovich">
+
+         <insert tableName="sectors">
+            <column name="name">Manufacturing</column>
+            <column name="value">1</column>
+            <column name="related_id">0</column>
+            <column name="depth">0</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Construction materials</column>
+            <column name="value">19</column>
+            <column name="related_id">1</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Electronics and Optics</column>
+            <column name="value">18</column>
+            <column name="related_id">1</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Food and Beverage</column>
+            <column name="value">6</column>
+            <column name="related_id">1</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Bakery &amp; confectionery products</column>
+            <column name="value">342</column>
+            <column name="related_id">6</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Beverages</column>
+            <column name="value">43</column>
+            <column name="related_id">6</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Fish &amp; fish products</column>
+            <column name="value">42</column>
+            <column name="related_id">6</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Meat &amp; meat products</column>
+            <column name="value">40</column>
+            <column name="related_id">6</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Milk &amp; dairy products</column>
+            <column name="value">39</column>
+            <column name="related_id">6</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Other</column>
+            <column name="value">437</column>
+            <column name="related_id">6</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Sweets &amp; snack food</column>
+            <column name="value">378</column>
+            <column name="related_id">6</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Furniture</column>
+            <column name="value">13</column>
+            <column name="related_id">1</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Bathroom/sauna</column>
+            <column name="value">389</column>
+            <column name="related_id">13</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Bedroom</column>
+            <column name="value">385</column>
+            <column name="related_id">13</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Children’s room</column>
+            <column name="value">390</column>
+            <column name="related_id">13</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Kitchen</column>
+            <column name="value">98</column>
+            <column name="related_id">13</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Living room</column>
+            <column name="value">101</column>
+            <column name="related_id">13</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Office</column>
+            <column name="value">392</column>
+            <column name="related_id">13</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Other (Furniture)</column>
+            <column name="value">394</column>
+            <column name="related_id">13</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Outdoor</column>
+            <column name="value">341</column>
+            <column name="related_id">13</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Project furniture</column>
+            <column name="value">99</column>
+            <column name="related_id">13</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Machinery</column>
+            <column name="value">12</column>
+            <column name="related_id">1</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Machinery components</column>
+            <column name="value">94</column>
+            <column name="related_id">12</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Machinery equipment/tools</column>
+            <column name="value">91</column>
+            <column name="related_id">12</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Manufacture of machinery</column>
+            <column name="value">224</column>
+            <column name="related_id">12</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Maritime</column>
+            <column name="value">97</column>
+            <column name="related_id">12</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Aluminium and steel workboats</column>
+            <column name="value">271</column>
+            <column name="related_id">97</column>
+            <column name="depth">12</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Boat/Yacht building</column>
+            <column name="value">269</column>
+            <column name="related_id">97</column>
+            <column name="depth">12</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Ship repair and conversion</column>
+            <column name="value">230</column>
+            <column name="related_id">97</column>
+            <column name="depth">12</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Metal structures</column>
+            <column name="value">93</column>
+            <column name="related_id">12</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Other</column>
+            <column name="value">508</column>
+            <column name="related_id">12</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Repair and maintenance service</column>
+            <column name="value">227</column>
+            <column name="related_id">12</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Metalworking</column>
+            <column name="value">11</column>
+            <column name="related_id">1</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Construction of metal structures</column>
+            <column name="value">67</column>
+            <column name="related_id">11</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Houses and buildings</column>
+            <column name="value">263</column>
+            <column name="related_id">11</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Metal products</column>
+            <column name="value">267</column>
+            <column name="related_id">11</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Metal works</column>
+            <column name="value">542</column>
+            <column name="related_id">11</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">CNC-machining</column>
+            <column name="value">75</column>
+            <column name="related_id">542</column>
+            <column name="depth">12</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Forgings, Fasteners</column>
+            <column name="value">62</column>
+            <column name="related_id">542</column>
+            <column name="depth">12</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Gas, Plasma, Laser cutting</column>
+            <column name="value">69</column>
+            <column name="related_id">542</column>
+            <column name="depth">12</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">MIG, TIG, Aluminum welding</column>
+            <column name="value">66</column>
+            <column name="related_id">542</column>
+            <column name="depth">12</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Plastic and Rubber</column>
+            <column name="value">9</column>
+            <column name="related_id">1</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Packaging</column>
+            <column name="value">54</column>
+            <column name="related_id">9</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Plastic goods</column>
+            <column name="value">556</column>
+            <column name="related_id">9</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Plastic processing technology</column>
+            <column name="value">559</column>
+            <column name="related_id">9</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Blowing</column>
+            <column name="value">55</column>
+            <column name="related_id">559</column>
+            <column name="depth">12</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Moulding</column>
+            <column name="value">57</column>
+            <column name="related_id">559</column>
+            <column name="depth">12</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Plastics welding and processing</column>
+            <column name="value">53</column>
+            <column name="related_id">559</column>
+            <column name="depth">12</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Plastic profiles</column>
+            <column name="value">560</column>
+            <column name="related_id">9</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Printing</column>
+            <column name="value">5</column>
+            <column name="related_id">1</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Advertising</column>
+            <column name="value">148</column>
+            <column name="related_id">5</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Book/Periodicals printing</column>
+            <column name="value">150</column>
+            <column name="related_id">5</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Labelling and packaging printing</column>
+            <column name="value">145</column>
+            <column name="related_id">5</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Textile and Clothing</column>
+            <column name="value">7</column>
+            <column name="related_id">1</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Clothing</column>
+            <column name="value">44</column>
+            <column name="related_id">7</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Textile</column>
+            <column name="value">45</column>
+            <column name="related_id">7</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Wood</column>
+            <column name="value">8</column>
+            <column name="related_id">1</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Other (Wood)</column>
+            <column name="value">337</column>
+            <column name="related_id">8</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Wooden building materials</column>
+            <column name="value">51</column>
+            <column name="related_id">8</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Wooden houses</column>
+            <column name="value">47</column>
+            <column name="related_id">8</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Other</column>
+            <column name="value">3</column>
+            <column name="related_id">0</column>
+            <column name="depth">0</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Creative industries</column>
+            <column name="value">37</column>
+            <column name="related_id">3</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Energy technology</column>
+            <column name="value">29</column>
+            <column name="related_id">3</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Environment</column>
+            <column name="value">33</column>
+            <column name="related_id">3</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Service</column>
+            <column name="value">2</column>
+            <column name="related_id">0</column>
+            <column name="depth">0</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Business services</column>
+            <column name="value">25</column>
+            <column name="related_id">2</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Engineering</column>
+            <column name="value">35</column>
+            <column name="related_id">2</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Information Technology and Telecommunications</column>
+            <column name="value">28</column>
+            <column name="related_id">2</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Data processing, Web portals, E-marketing</column>
+            <column name="value">581</column>
+            <column name="related_id">28</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Programming, Consultancy</column>
+            <column name="value">576</column>
+            <column name="related_id">28</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Software, Hardware</column>
+            <column name="value">121</column>
+            <column name="related_id">28</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Telecommunications</column>
+            <column name="value">122</column>
+            <column name="related_id">28</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Tourism</column>
+            <column name="value">22</column>
+            <column name="related_id">2</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Translation services</column>
+            <column name="value">141</column>
+            <column name="related_id">2</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Transport and Logistics</column>
+            <column name="value">21</column>
+            <column name="related_id">2</column>
+            <column name="depth">4</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Air</column>
+            <column name="value">111</column>
+            <column name="related_id">21</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Rail</column>
+            <column name="value">114</column>
+            <column name="related_id">21</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Road</column>
+            <column name="value">112</column>
+            <column name="related_id">21</column>
+            <column name="depth">8</column>
+        </insert>
+        <insert tableName="sectors">
+            <column name="name">Water</column>
+            <column name="value">113</column>
+            <column name="related_id">21</column>
+            <column name="depth">8</column>
+        </insert>
+
+
+
+    </changeSet>
+</databaseChangeLog>
